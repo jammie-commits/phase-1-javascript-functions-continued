@@ -7,16 +7,16 @@ function saturdayFun(activity = "roller-skate") {
     return `This Monday, I will ${task}.`;
   }
   
-  function wrapAdjective(visualFlair = "*") {
+  function wrapAdjective(Flair = "*") {
     return function (adjective = "special") {
-      return `You are ${visualFlair}${adjective}${visualFlair}!`;
+      return `You are ${Flair}${adjective}${Flair}!`;
     };
   }
   
   const encouragingPromptFunction = wrapAdjective("!!!");
   
   console.log(saturdayFun());  
-  console.log(saturdayFun("play board games"));  
+  console.log(saturdayFun("bathe my dog"));  
   
   console.log(mondayWork());  
   console.log(mondayWork("work from home"));  
